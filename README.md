@@ -107,12 +107,11 @@ under `results/`.
   `experiments/E2_criteria_recourse_compat/`; `E1_criteria_comparison/` is an
   earlier diagnostic variant and `algorithm_experiments/A1_accuracy/` is the
   solution-quality ladder benchmark.
-- Naming note: the criterion key `cantelli` in the code (function
-  `kappa_cantelli`) implements the two-sided Chebyshev-type bound
-  sqrt((1-eps)/eps) reported as "Chebyshev-type" in the paper; the
-  function name is historical and is kept unchanged because the
-  proof-code digest binds the artifact certificates to the exact
-  source bytes.
+- Naming note: the criterion key `cantelli` in the code and the paper's
+  "Cantelli (one-sided Chebyshev)" label both refer to the bound
+  sqrt((1-eps)/eps). The paper's function-name reference is historical;
+  the name is kept unchanged because the proof-code digest binds the
+  artifact certificates to the exact source bytes.
 
 ## Tests
 

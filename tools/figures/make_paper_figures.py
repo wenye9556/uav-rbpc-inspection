@@ -19,7 +19,10 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = Path(__file__).resolve().parents[2]
+_here = Path(__file__).resolve()
+ROOT = next((d for d in [_here.parent, *_here.parents]
+             if (d / 'results').is_dir() and (d / 'step12_branch_price.py').exists()),
+            _here.parents[2])
 FIG = ROOT / "results" / "figures"
 RES = ROOT / "results"
 # LaTeX compile assets (PDF twins).  results/figures stays SVG-only by
@@ -329,9 +332,10 @@ def fig_dtau():
 
 # ----------------------------------------------------------------- fig 7
 def fig_plan_structure():
-    summary = json.loads((ROOT / "agent_analysis" / "derived" /
-                          "plan_structure_summary.json").read_text(
-                              encoding="utf-8"))
+    _ps = ROOT / "agent_analysis" / "derived" / "plan_structure_summary.json"
+    if not _ps.is_file():
+        _ps = ROOT / "results" / "diagnostics" / "plan_structure_summary.json"
+    summary = json.loads(_ps.read_text(encoding="utf-8"))
     main = summary["n10_M_K2_B7_v31"]
     pairs = main["launch_tau_state_pairs"]
     h_hist = main["horizons_min_hist"]

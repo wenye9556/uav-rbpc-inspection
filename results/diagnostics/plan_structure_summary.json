@@ -1,0 +1,610 @@
+{
+  "n10_M_K2_B7_v31": {
+    "runtime_s": 2179.0081684000324,
+    "C": "8",
+    "E_Wh": 1956.6403352966674,
+    "wh_per_turbine": 244.6,
+    "n_sorties_certified": 7,
+    "n_missions_detail": 7,
+    "covered_turbines": [
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "horizons_min_hist": {
+      "20.0": 5,
+      "30.0": 1,
+      "25.0": 1
+    },
+    "mean_stops": 1.14,
+    "stops_hist": {
+      "1": 6,
+      "2": 1
+    },
+    "launch_slots_used": [
+      45,
+      140,
+      160,
+      270,
+      290,
+      305,
+      320
+    ],
+    "launch_state_hist": {
+      "动力定位": 7
+    },
+    "launch_tau_state_pairs": [
+      [
+        45.0,
+        "动力定位"
+      ],
+      [
+        140.0,
+        "动力定位"
+      ],
+      [
+        160.0,
+        "动力定位"
+      ],
+      [
+        270.0,
+        "动力定位"
+      ],
+      [
+        290.0,
+        "动力定位"
+      ],
+      [
+        305.0,
+        "动力定位"
+      ],
+      [
+        320.0,
+        "动力定位"
+      ]
+    ],
+    "battery_groups_used": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "missions": [
+      {
+        "uav": "0",
+        "battery_group": "0",
+        "E_plan_Wh": 258.2,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_004"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "1",
+        "E_plan_Wh": 255.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_008"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "2",
+        "E_plan_Wh": 378.8,
+        "h_min": 30.0,
+        "stops": 2,
+        "turbines": [
+          "Rodsand_II_005",
+          "Rodsand_II_006"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "3",
+        "E_plan_Wh": 250.5,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_003"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "4",
+        "E_plan_Wh": 251.4,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_009"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "5",
+        "E_plan_Wh": 253.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_010"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "6",
+        "E_plan_Wh": 309.3,
+        "h_min": 25.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_002"
+        ]
+      }
+    ]
+  },
+  "n12_M_K2_B7_v20": {
+    "runtime_s": 5024.293780299951,
+    "C": "8",
+    "E_Wh": 1843.3470550280304,
+    "wh_per_turbine": 230.4,
+    "n_sorties_certified": 7,
+    "n_missions_detail": 7,
+    "covered_turbines": [
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010",
+      "Rodsand_II_012"
+    ],
+    "horizons_min_hist": {
+      "15.0": 1,
+      "20.0": 5,
+      "30.0": 1
+    },
+    "mean_stops": 1.14,
+    "stops_hist": {
+      "1": 6,
+      "2": 1
+    },
+    "launch_slots_used": [
+      30,
+      45,
+      140,
+      160,
+      270,
+      300,
+      305
+    ],
+    "launch_state_hist": {
+      "动力定位": 7
+    },
+    "launch_tau_state_pairs": [
+      [
+        30.0,
+        "动力定位"
+      ],
+      [
+        45.0,
+        "动力定位"
+      ],
+      [
+        140.0,
+        "动力定位"
+      ],
+      [
+        160.0,
+        "动力定位"
+      ],
+      [
+        270.0,
+        "动力定位"
+      ],
+      [
+        300.0,
+        "动力定位"
+      ],
+      [
+        305.0,
+        "动力定位"
+      ]
+    ],
+    "battery_groups_used": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "missions": [
+      {
+        "uav": "0",
+        "battery_group": "0",
+        "E_plan_Wh": 196.1,
+        "h_min": 15.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_012"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "1",
+        "E_plan_Wh": 258.2,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_004"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "2",
+        "E_plan_Wh": 255.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_008"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "3",
+        "E_plan_Wh": 378.8,
+        "h_min": 30.0,
+        "stops": 2,
+        "turbines": [
+          "Rodsand_II_005",
+          "Rodsand_II_006"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "4",
+        "E_plan_Wh": 250.5,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_003"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "5",
+        "E_plan_Wh": 251.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_009"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "6",
+        "E_plan_Wh": 253.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_010"
+        ]
+      }
+    ]
+  },
+  "n15_M_K2_B7_v31": {
+    "runtime_s": 10836.288549400051,
+    "C": "8",
+    "E_Wh": 1837.7743812961355,
+    "wh_per_turbine": 229.7,
+    "n_sorties_certified": 7,
+    "n_missions_detail": 7,
+    "covered_turbines": [
+      "Rodsand_II_003",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_009",
+      "Rodsand_II_010",
+      "Rodsand_II_012",
+      "Rodsand_II_014",
+      "Rodsand_II_015"
+    ],
+    "horizons_min_hist": {
+      "15.0": 1,
+      "20.0": 5,
+      "30.0": 1
+    },
+    "mean_stops": 1.14,
+    "stops_hist": {
+      "1": 6,
+      "2": 1
+    },
+    "launch_slots_used": [
+      30,
+      45,
+      140,
+      160,
+      270,
+      300,
+      305
+    ],
+    "launch_state_hist": {
+      "动力定位": 7
+    },
+    "launch_tau_state_pairs": [
+      [
+        30.0,
+        "动力定位"
+      ],
+      [
+        45.0,
+        "动力定位"
+      ],
+      [
+        140.0,
+        "动力定位"
+      ],
+      [
+        160.0,
+        "动力定位"
+      ],
+      [
+        270.0,
+        "动力定位"
+      ],
+      [
+        300.0,
+        "动力定位"
+      ],
+      [
+        305.0,
+        "动力定位"
+      ]
+    ],
+    "battery_groups_used": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "missions": [
+      {
+        "uav": "0",
+        "battery_group": "0",
+        "E_plan_Wh": 196.1,
+        "h_min": 15.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_012"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "1",
+        "E_plan_Wh": 254.5,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_015"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "2",
+        "E_plan_Wh": 253.4,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_014"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "3",
+        "E_plan_Wh": 378.8,
+        "h_min": 30.0,
+        "stops": 2,
+        "turbines": [
+          "Rodsand_II_005",
+          "Rodsand_II_006"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "4",
+        "E_plan_Wh": 250.5,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_003"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "5",
+        "E_plan_Wh": 251.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_009"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "6",
+        "E_plan_Wh": 253.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_010"
+        ]
+      }
+    ]
+  },
+  "n10_M_K3_B7_v20": {
+    "runtime_s": 2644.0247638999717,
+    "C": "8",
+    "E_Wh": 1956.5950956483666,
+    "wh_per_turbine": 244.6,
+    "n_sorties_certified": 7,
+    "n_missions_detail": 7,
+    "covered_turbines": [
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "horizons_min_hist": {
+      "20.0": 5,
+      "30.0": 1,
+      "25.0": 1
+    },
+    "mean_stops": 1.14,
+    "stops_hist": {
+      "1": 6,
+      "2": 1
+    },
+    "launch_slots_used": [
+      45,
+      140,
+      160,
+      270,
+      300,
+      305,
+      320
+    ],
+    "launch_state_hist": {
+      "动力定位": 7
+    },
+    "launch_tau_state_pairs": [
+      [
+        45.0,
+        "动力定位"
+      ],
+      [
+        140.0,
+        "动力定位"
+      ],
+      [
+        160.0,
+        "动力定位"
+      ],
+      [
+        270.0,
+        "动力定位"
+      ],
+      [
+        300.0,
+        "动力定位"
+      ],
+      [
+        305.0,
+        "动力定位"
+      ],
+      [
+        320.0,
+        "动力定位"
+      ]
+    ],
+    "battery_groups_used": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "missions": [
+      {
+        "uav": "0",
+        "battery_group": "0",
+        "E_plan_Wh": 258.2,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_004"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "1",
+        "E_plan_Wh": 255.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_008"
+        ]
+      },
+      {
+        "uav": "2",
+        "battery_group": "2",
+        "E_plan_Wh": 378.8,
+        "h_min": 30.0,
+        "stops": 2,
+        "turbines": [
+          "Rodsand_II_005",
+          "Rodsand_II_006"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "3",
+        "E_plan_Wh": 250.5,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_003"
+        ]
+      },
+      {
+        "uav": "1",
+        "battery_group": "4",
+        "E_plan_Wh": 251.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_009"
+        ]
+      },
+      {
+        "uav": "2",
+        "battery_group": "5",
+        "E_plan_Wh": 253.3,
+        "h_min": 20.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_010"
+        ]
+      },
+      {
+        "uav": "0",
+        "battery_group": "6",
+        "E_plan_Wh": 309.3,
+        "h_min": 25.0,
+        "stops": 1,
+        "turbines": [
+          "Rodsand_II_002"
+        ]
+      }
+    ]
+  }
+}
