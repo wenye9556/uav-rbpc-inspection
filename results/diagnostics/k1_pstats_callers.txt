@@ -1,0 +1,104 @@
+== CALLERS of _validate_linprog_result (931) ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'_validate_linprog_result'>
+
+Function                                                         was called by...
+                                                                     ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:931(_validate_linprog_result)  <-    9842    7.801 12176.701  D:\无人机巡检风机\step12_branch_price.py:7017(_solve_restricted_master)
+
+
+
+== CALLERS of _lagrangian_dual_lower_bound (571) ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'_lagrangian_dual_lower_bound'>
+
+Function                                                             was called by...
+                                                                         ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:571(_lagrangian_dual_lower_bound)  <-    9842 2132.654 12167.576  D:\无人机巡检风机\step12_branch_price.py:931(_validate_linprog_result)
+
+
+
+== CALLERS of genexpr 11943 ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'11943'>
+
+Function                                            was called by...
+                                                        ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:11943(<genexpr>)  <- 19388322   21.243 9078.022  D:\无人机巡检风机\step12_branch_price.py:11140(_solve_branch_price_stage)
+
+
+
+== CALLEES of _solve_branch_price_stage ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'_solve_branch_price_stage'>
+
+Function                                                            called...
+                                                                        ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:11140(_solve_branch_price_stage)  ->    3483    0.004    0.005  D:\Python\Lib\enum.py:186(__get__)
+                                                                            28    0.000    0.000  D:\Python\Lib\fractions.py:335(from_float)
+                                                                            28    0.000    0.000  D:\Python\Lib\fractions.py:697(forward)
+                                                                            28    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:140(_finite_number)
+                                                                          6359    0.009    0.013  D:\无人机巡检风机\step12_branch_price.py:908(_safe_integer_floor)
+                                                                          9817    0.013    0.015  D:\无人机巡检风机\step12_branch_price.py:6401(closed)
+                                                                         16214    0.017    0.023  D:\无人机巡检风机\step12_branch_price.py:6692(_deadline_hit)
+                                                                           280    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:6696(_tid)
+                                                                         38677    0.056    0.109  D:\无人机巡检风机\step12_branch_price.py:6700(_ordered_tids)
+                                                                            14    0.000    0.005  D:\无人机巡检风机\step12_branch_price.py:6728(_exact_route_signature)
+                                                                          6353    0.015    0.015  D:\无人机巡检风机\step12_branch_price.py:6796(_branch_consistent)
+                                                                            28    0.007    0.009  D:\无人机巡检风机\step12_branch_price.py:6822(_possible_resource_row_times)
+                                                                          9852    1.223 16439.324  D:\无人机巡检风机\step12_branch_price.py:7017(_solve_restricted_master)
+                                                                             3    0.020    1.121  D:\无人机巡检风机\step12_branch_price.py:7604(_resource_aware_singleton_variant_enrichment)
+                                                                          9671    9.203 6289.577  D:\无人机巡检风机\step12_branch_price.py:8425(_exact_pricing_search)
+                                                                           125    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:9258(_depth_prefix_iterator)
+                                                                           125    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:9259(walk)
+                                                                            27    0.001    0.111  D:\无人机巡检风机\step12_branch_price.py:9590(_add_columns)
+                                                                          9827    0.067    0.074  D:\无人机巡检风机\step12_branch_price.py:9700(_node_allowed_turbine_bound)
+                                                                          9817    0.089    0.169  D:\无人机巡检风机\step12_branch_price.py:9704(_safe_node_bound_from_pricing)
+                                                                          7092    0.251    0.350  D:\无人机巡检风机\step12_branch_price.py:9778(_is_integral)
+                                                                          3483    5.940  155.499  D:\无人机巡检风机\step12_branch_price.py:9782(_exact_binary_master_feasible)
+                                                                          3483    0.024    0.117  D:\无人机巡检风机\step12_branch_price.py:9830(_selection_from_local)
+                                                                            59    0.000    0.001  D:\无人机巡检风机\step12_branch_price.py:9834(_coverage_of_selection)
+                                                                            28    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:9847(_fraction_to_float_up)
+                                                                          3483    0.022    3.011  D:\无人机巡检风机\step12_branch_price.py:9884(_audit_integer_selection)
+                                                                          3609    0.668    9.548  D:\无人机巡检风机\step12_branch_price.py:9892(_branch_on_fractional_solution)
+                                                                          7262    0.003    0.003  D:\无人机巡检风机\step12_branch_price.py:9988(_queue_priority)
+                                                                            28    0.000    0.001  D:\无人机巡检风机\step12_branch_price.py:9992(_global_open_bound_info)
+                                                                          6331    0.017    2.996  D:\无人机巡检风机\step12_branch_price.py:10013(_global_open_bound)
+                                                                          3474    0.001    0.001  D:\无人机巡检风机\step12_branch_price.py:11074(_record_resource_rejection_diagnostic)
+                                                                         53/27    0.008   42.561  D:\无人机巡检风机\step12_branch_price.py:11499(_maybe_archive_primal_recover)
+                                                                      19388322   21.243 9078.022  D:\无人机巡检风机\step12_branch_price.py:11943(<genexpr>)
+                                                                         52005    0.046    1.938  D:\无人机巡检风机\step12_branch_price.py:11947(<genexpr>)
+                                                                         20844    0.010    6.220  D:\无人机巡检风机\step12_branch_price.py:12562(<genexpr>)
+                                                                            32    0.000    0.010  D:\无人机巡检风机\step12_branch_price.py:12973(<genexpr>)
+                                                                            25    0.098    9.565  D:\无人机巡检风机\step12_branch_price.py:13198(_primal_refresh_incumbent)
+                                                                            29    0.000    0.000  D:\无人机巡检风机\step9_model.py:222(B_use)
+                                                                          9671  300.944  300.944  {built-in method _hashlib.openssl_sha256}
+                                                                          6353    0.033    0.033  {built-in method _heapq.heappop}
+                                                                          7234    0.007    0.007  {built-in method _heapq.heappush}
+                                                                          9671    0.002    0.002  {built-in method builtins.abs}
+                                                                         10449    0.002    0.002  {built-in method builtins.getattr}
+                                                                          9895    0.005    0.005  {built-in method builtins.isinstance}
+                                                                        115066    0.018    0.018  {built-in method builtins.len}
+                                                                         74284    0.017    0.017  {built-in method builtins.max}
+                                                                         29043    0.005    0.005  {built-in method builtins.min}
+                                                                             7    0.000    0.091  {built-in method builtins.next}
+                                                                          9671 3089.679 3089.679  {built-in method builtins.repr}
+                                                                            28    0.000    0.000  {built-in method builtins.sorted}
+                                                                           143    0.000    0.102  {built-in method builtins.sum}
+                                                                          9671    0.001    0.001  {built-in method math.isfinite}
+                                                                         29184    0.043    0.043  {built-in method numpy.asarray}
+                                                                         26670    0.010    0.010  {built-in method time.perf_counter}
+                                                                         26492    0.017    0.017  {method 'append' of 'list' objects}
+                                                                         38677    0.013    0.013  {method 'difference_update' of 'set' objects}
+                                                                          9671  363.933  363.933  {method 'encode' of 'str' objects}
+                                                                             3    0.000    0.000  {method 'extend' of 'list' objects}
+                                                                           598    0.000    0.000  {method 'get' of 'dict' objects}
+                                                                          9671    0.106    0.106  {method 'hexdigest' of '_hashlib.HASH' objects}
+                                                                             3    0.000    0.000  {method 'issubset' of 'set' objects}
+                                                                         67725    0.019    0.019  {method 'items' of 'dict' objects}
+                                                                          9671    0.010    0.010  {method 'lower' of 'str' objects}
+                                                                          9671    0.007    0.007  {method 'strip' of 'str' objects}
+                                                                             2    0.000    0.000  {method 'update' of 'set' objects}
+                                                                             3    0.000    0.000  {method 'values' of 'dict' objects}
+
+

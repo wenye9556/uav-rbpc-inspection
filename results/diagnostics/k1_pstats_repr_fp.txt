@@ -1,0 +1,58 @@
+== CALLERS of builtins.repr ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'builtins.repr'>
+
+Function                         was called by...
+                                     ncalls  tottime  cumtime
+{built-in method builtins.repr}  <-       2    0.000    0.000  D:\Python\Lib\annotationlib.py:996(type_repr)
+                                         81    0.000    0.000  D:\Python\Lib\dataclasses.py:681(<genexpr>)
+                                        367    0.000    0.000  D:\Python\Lib\inspect.py:1333(formatannotation)
+                                        368    0.000    0.000  D:\Python\Lib\inspect.py:2760(_format)
+                                          1    0.000    0.000  D:\无人机巡检风机\.venv\Lib\site-packages\numpy\_typing\_add_docstring.py:1(<module>)
+                                         72    0.002    0.002  D:\无人机巡检风机\step12_branch_price.py:1102(_state_fp)
+                                         27    0.003    0.003  D:\无人机巡检风机\step12_branch_price.py:7604(_resource_aware_singleton_variant_enrichment)
+                                       1176    0.111    0.111  D:\无人机巡检风机\step12_branch_price.py:8797(consider)
+                                       9671 3089.679 3089.679  D:\无人机巡检风机\step12_branch_price.py:11140(_solve_branch_price_stage)
+                                          6    0.000    0.000  D:\无人机巡检风机\step12_branch_price.py:11499(_maybe_archive_primal_recover)
+                                   19378651 9053.869 9053.869  D:\无人机巡检风机\step12_branch_price.py:11943(<genexpr>)
+                                      42334    1.873    1.873  D:\无人机巡检风机\step12_branch_price.py:11947(<genexpr>)
+                                        240    0.017    0.017  D:\无人机巡检风机\step12_branch_price.py:12250(<genexpr>)
+                                         26    0.002    0.002  D:\无人机巡检风机\step12_branch_price.py:12973(<genexpr>)
+                                         20    0.001    0.001  D:\无人机巡检风机\step12_branch_price.py:13168(<lambda>)
+                                       1834    0.142    0.142  D:\无人机巡检风机\step12_branch_price.py:13198(_primal_refresh_incumbent)
+                                       5277    0.374    0.374  D:\无人机巡检风机\step12_branch_price.py:13310(<genexpr>)
+                                       1052    0.076    0.076  D:\无人机巡检风机\step12_branch_price.py:13350(_record_deck_pairs)
+                                       6531    0.480    0.480  D:\无人机巡检风机\step12_branch_price.py:13436(_route_key)
+                                         28    0.002    0.002  D:\无人机巡检风机\step12_branch_price.py:13634(<lambda>)
+                                       6531    0.475    0.475  D:\无人机巡检风机\step12_branch_price.py:13673(<lambda>)
+                                        101    0.009    0.009  D:\无人机巡检风机\step12_branch_price.py:13946(_diagnose_fixed_archive_coverage)
+                                        311    0.023    0.023  D:\无人机巡检风机\step12_branch_price.py:14046(_diagnose_resource_variant_postsolve)
+
+
+
+== CALLERS of _state_fp ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'_state_fp'>
+
+Function                                           was called by...
+                                                       ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:1102(_state_fp)  <- 1040774906/327102458  461.817 1688.191  D:\无人机巡检风机\step12_branch_price.py:1127(<genexpr>)
+                                                    2351/1223    0.002    0.152  D:\无人机巡检风机\step12_branch_price.py:1132(<genexpr>)
+                                                     2675/365    0.029    0.148  D:\无人机巡检风机\step12_branch_price.py:1134(<genexpr>)
+                                                     37170080   70.053 1900.140  D:\无人机巡检风机\step12_branch_price.py:1148(_ship_column_fp)
+                                                      7434016    9.130  177.834  D:\无人机巡检风机\step12_branch_price.py:1211(_wx_fp)
+                                                          282    0.000    0.012  D:\无人机巡检风机\step12_branch_price.py:6743(_column_semantics_fp)
+                                                            7    0.000    0.149  step13_experiment_model.py:1360(fp)
+
+
+
+== CALLEES of genexpr 11943 ==
+   Ordered by: cumulative time
+   List reduced from 6422 to 1 due to restriction <'11943'>
+
+Function                                            called...
+                                                        ncalls  tottime  cumtime
+D:\无人机巡检风机\step12_branch_price.py:11943(<genexpr>)  -> 19378651 9053.869 9053.869  {built-in method builtins.repr}
+                                                      19378651    2.911    2.911  {method 'hex' of 'float' objects}
+
+

@@ -87,10 +87,32 @@ under `results/`.
 | `experiments/E1_n10*`, `algorithm_experiments/A2_speed` | Acceleration ladder (paper Table 2, n = 10 rows) |
 | `experiments/E1_n12`, `E1_n15_v31`, `E1_n18` | Scale envelope 10→18 turbines (Table 2) |
 | `experiments/E1_k1_v31` | K = 1 boundary study, incl. profiling artifacts (Section on the certificate envelope) |
+| `experiments/E1_n10_reference` | Table 2 reference row (5.54 h baseline; from git tag `baseline-reference`) |
+| `diagnostics/` | K = 1 cProfile evidence backing the string-rendering attribution (19.4M calls) |
+| `tools/figures/` | Generator for all paper figures (reads `results/`, writes `results/figures/`) |
 | `experiments/E1_k3` | Fleet-size sensitivity (Tables 2–3, K = 3) |
 | `experiments/E1_frontier_n8` | Certified fleet–battery frontier, full route universe |
 | `algorithm_experiments/A1_accuracy` | Safety-criterion comparison (Table 4) |
 | `experiments/E1_channels_n10.json` | Out-of-sample replay channels (7,141 draws) |
+
+## Provenance notes
+
+- The five-version runtime ladder of Table 2 (reference / compiled / pruned /
+  cached / hoisted) compares successive solver generations; each generation's
+  artifact carries the proof digest of the code snapshot it ran on (the
+  reference generation corresponds to git tag `baseline-reference` in the
+  authors' working repository). Only the `hoisted` generation is the current
+  code.
+- Table 4 (safety-criterion comparison) is backed by
+  `experiments/E2_criteria_recourse_compat/`; `E1_criteria_comparison/` is an
+  earlier diagnostic variant and `algorithm_experiments/A1_accuracy/` is the
+  solution-quality ladder benchmark.
+- Naming note: the criterion key `cantelli` in the code (function
+  `kappa_cantelli`) implements the two-sided Chebyshev-type bound
+  sqrt((1-eps)/eps) reported as "Chebyshev-type" in the paper; the
+  function name is historical and is kept unchanged because the
+  proof-code digest binds the artifact certificates to the exact
+  source bytes.
 
 ## Tests
 
