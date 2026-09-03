@@ -1,0 +1,9 @@
+# Core scientific stack for the UAV inspection pipeline (step1-step20, selftest).
+# Tested with the versions below; later compatible versions likely work.
+numpy>=2.0
+pandas>=2.2
+scipy>=1.13
+matplotlib>=3.9
+geopandas>=1.0
+xarray>=2024.6
+cdsapi>=0.7

@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.idea/
+
+# Fetched / derived data (not part of the code release; see README)
+data/
+tracks/
+weather/
+ais_filtered/
+out/
+build/
+*.zip

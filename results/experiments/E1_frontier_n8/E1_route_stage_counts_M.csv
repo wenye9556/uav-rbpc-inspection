@@ -1,0 +1,2 @@
+﻿uav,status,warmstart_status,warmstart_seconds,formal_prebuilt_route_pool,heuristic_seed_candidates,heuristic_multistop_seed_candidates,final_shared_pool,route_universe_complete,route_universe_columns,route_universe_columns_sha256,route_universe_builder_contract
+M,formal-certified-complete-route-universe,superseded-by-complete-universe,0.0,True,0,0,186,True,186,c3e45031660874347df49162145bca9a86503355904ff049652f07c680f2f10e,formal-complete-physical-route-universe-v1-exhaustive-sequence-horizon
