@@ -21,7 +21,9 @@ import matplotlib.pyplot as plt
 
 _here = Path(__file__).resolve()
 ROOT = next((d for d in [_here.parent, *_here.parents]
-             if (d / 'results').is_dir() and (d / 'step12_branch_price.py').exists()),
+             if (d / 'results').is_dir()
+             and ((d / 'step12_branch_price.py').exists()
+                  or (d / 'code' / 'step12_branch_price.py').exists())),
             _here.parents[2])
 FIG = ROOT / "results" / "figures"
 RES = ROOT / "results"
