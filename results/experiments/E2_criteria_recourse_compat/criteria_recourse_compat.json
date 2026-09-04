@@ -1,0 +1,166 @@
+{
+  "protocol": {
+    "benchmark": "recourse-compatible DRCC family (doc_experiments.md §3.7.1)",
+    "instance": "n=10 M K=2 B=7 dtau=5 S=4 real data",
+    "time_recourse": "wait_and_speed",
+    "criteria": "nominal, gaussian, cantelli, vp_unimodal (all drcc)",
+    "replay": "real_validation per-sortie diagnostic"
+  },
+  "nominal": {
+    "C": 10,
+    "E_Wh": 2048.571936529414,
+    "runtime_s": 3600.031325199874,
+    "coverage_optimal": true,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 10,
+      "n_missing": 0,
+      "n_test_total": 7666,
+      "n_viol_total": 1082,
+      "max_col_viol": 0.5064,
+      "upper95": 0.6367244399485179,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.50641,
+        0.17664,
+        0.24823,
+        0.40385,
+        0.29965,
+        0.35616,
+        0.48084,
+        0.07881,
+        0.13049,
+        0.05407
+      ]
+    }
+  },
+  "gaussian": {
+    "C": 10,
+    "E_Wh": 2067.12301738564,
+    "runtime_s": 3600.0594701000955,
+    "coverage_optimal": true,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 10,
+      "n_missing": 0,
+      "n_test_total": 12208,
+      "n_viol_total": 657,
+      "max_col_viol": 0.1092,
+      "upper95": 0.22968431647968918,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.05541,
+        0.06159,
+        0.05274,
+        0.05407,
+        0.10924,
+        0.10734,
+        0.02768,
+        0.03501,
+        0.05474,
+        0.05407
+      ]
+    }
+  },
+  "cantelli": {
+    "C": 0,
+    "E_Wh": 0.0,
+    "runtime_s": 1801.7235626999754,
+    "coverage_optimal": true,
+    "energy_optimal": true,
+    "lexicographic_optimal": true,
+    "global_certificate_available": true,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [],
+    "replay": {
+      "n_replayed": 0,
+      "n_missing": 0,
+      "n_test_total": 0,
+      "n_viol_total": 0,
+      "max_col_viol": null,
+      "upper95": null,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": null,
+      "mission_requirement_holds": null,
+      "validation_complete": null,
+      "per_route_viol": []
+    }
+  },
+  "vp": {
+    "C": 8,
+    "E_Wh": 1956.6403352966674,
+    "runtime_s": 1912.8736815999728,
+    "coverage_optimal": true,
+    "energy_optimal": true,
+    "lexicographic_optimal": true,
+    "global_certificate_available": true,
+    "termination_reason": "energy-bound-closed",
+    "covered": [
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 7,
+      "n_missing": 0,
+      "n_test_total": 7141,
+      "n_viol_total": 238,
+      "max_col_viol": 0.035,
+      "upper95": 0.0904926300952549,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.03411,
+        0.03411,
+        0.03125,
+        0.03411,
+        0.03501,
+        0.03501,
+        0.02768
+      ]
+    }
+  }
+}

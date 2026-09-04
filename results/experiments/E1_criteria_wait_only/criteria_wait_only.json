@@ -1,0 +1,424 @@
+{
+  "protocol": {
+    "benchmark": "wait_only unified 7-criteria (step13:5526-5556)",
+    "instance": "n=10 M K=2 B=7 dtau=5 S=4 real data",
+    "replay": "real_validation per-sortie diagnostic"
+  },
+  "nominal": {
+    "C": 10,
+    "E_Wh": 1462.282374086902,
+    "runtime_s": 35.87717300001532,
+    "coverage_optimal": true,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "pricing-evaluator-error:ValueError",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 10,
+      "n_missing": 0,
+      "n_test_total": 9886,
+      "n_viol_total": 2109,
+      "max_col_viol": 0.7535,
+      "upper95": 0.8644913823868786,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.40224,
+        0.08656,
+        0.75349,
+        0.24216,
+        0.07537,
+        0.62369,
+        0.62411,
+        0.06141,
+        0.45645,
+        0.43972
+      ]
+    }
+  },
+  "gaussian": {
+    "C": 8,
+    "E_Wh": 1713.381772649795,
+    "runtime_s": 3600.0297976001166,
+    "coverage_optimal": false,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "exact-pricing-time-limit",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 7,
+      "n_missing": 0,
+      "n_test_total": 6779,
+      "n_viol_total": 376,
+      "max_col_viol": 0.1513,
+      "upper95": 0.2788124667086289,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.04219,
+        0.05541,
+        0.05607,
+        0.15132,
+        0.15132,
+        0.05741,
+        0.0346
+      ]
+    }
+  },
+  "SAA": {
+    "C": 10,
+    "E_Wh": 1906.2118829837414,
+    "runtime_s": 3600.024147100048,
+    "coverage_optimal": true,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 10,
+      "n_missing": 0,
+      "n_test_total": 9894,
+      "n_viol_total": 719,
+      "max_col_viol": 0.338,
+      "upper95": 0.4495511025757814,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.33803,
+        0.06008,
+        0.19373,
+        0.05674,
+        0.05607,
+        0.12185,
+        0.05741,
+        0.28846,
+        0.05808,
+        0.05874
+      ]
+    }
+  },
+  "box": {
+    "C": 2,
+    "E_Wh": 507.6654103204685,
+    "runtime_s": 2241.68507570005,
+    "coverage_optimal": true,
+    "energy_optimal": true,
+    "lexicographic_optimal": true,
+    "global_certificate_available": true,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [
+      "Rodsand_II_005",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 2,
+      "n_missing": 0,
+      "n_test_total": 1291,
+      "n_viol_total": 65,
+      "max_col_viol": 0.1299,
+      "upper95": 0.23202466381796455,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.12994,
+        0.0377
+      ]
+    }
+  },
+  "budget_G2": {
+    "C": 10,
+    "E_Wh": 2002.5804007618538,
+    "runtime_s": 3600.020808500005,
+    "coverage_optimal": true,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "stage-optimum-proven",
+    "covered": [
+      "Rodsand_II_001",
+      "Rodsand_II_002",
+      "Rodsand_II_003",
+      "Rodsand_II_004",
+      "Rodsand_II_005",
+      "Rodsand_II_006",
+      "Rodsand_II_007",
+      "Rodsand_II_008",
+      "Rodsand_II_009",
+      "Rodsand_II_010"
+    ],
+    "replay": {
+      "n_replayed": 9,
+      "n_missing": 0,
+      "n_test_total": 9278,
+      "n_viol_total": 591,
+      "max_col_viol": 0.3516,
+      "upper95": 0.5205646917399669,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.07278,
+        0.1579,
+        0.05607,
+        0.35165,
+        0.12185,
+        0.05808,
+        0.05874,
+        0.04309,
+        0.0346
+      ]
+    }
+  },
+  "cantelli": {
+    "C": 0,
+    "E_Wh": 0.0,
+    "runtime_s": 3600.0132430999074,
+    "coverage_optimal": false,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "exact-pricing-time-limit",
+    "covered": [],
+    "replay": {
+      "n_replayed": 0,
+      "n_missing": 0,
+      "n_test_total": 0,
+      "n_viol_total": 0,
+      "max_col_viol": null,
+      "upper95": null,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": null,
+      "mission_requirement_holds": null,
+      "validation_complete": null,
+      "per_route_viol": []
+    }
+  },
+  "vp": {
+    "C": 1,
+    "E_Wh": 249.9854531076967,
+    "runtime_s": 3600.001361000119,
+    "coverage_optimal": false,
+    "energy_optimal": false,
+    "lexicographic_optimal": false,
+    "global_certificate_available": false,
+    "termination_reason": "exact-pricing-time-limit",
+    "covered": [
+      "Rodsand_II_006"
+    ],
+    "replay": {
+      "n_replayed": 1,
+      "n_missing": 0,
+      "n_test_total": 1114,
+      "n_viol_total": 42,
+      "max_col_viol": 0.0377,
+      "upper95": 0.07437053913673126,
+      "allocation_budget": 0.045,
+      "allocation_budget_holds": false,
+      "mission_requirement_holds": false,
+      "validation_complete": true,
+      "per_route_viol": [
+        0.0377
+      ]
+    }
+  },
+  "tierL_conservative": {
+    "protocol": "tier L conservative criteria, wait_only",
+    "SAA": {
+      "C": 10,
+      "E_Wh": 3496.7342147745994,
+      "runtime_s": 3600.021169200074,
+      "coverage_optimal": true,
+      "energy_optimal": false,
+      "lexicographic_optimal": false,
+      "global_certificate_available": false,
+      "termination_reason": "stage-optimum-proven",
+      "covered": [
+        "Rodsand_II_001",
+        "Rodsand_II_002",
+        "Rodsand_II_003",
+        "Rodsand_II_004",
+        "Rodsand_II_005",
+        "Rodsand_II_006",
+        "Rodsand_II_007",
+        "Rodsand_II_008",
+        "Rodsand_II_009",
+        "Rodsand_II_010"
+      ],
+      "replay": {
+        "n_replayed": 10,
+        "n_missing": 0,
+        "n_test_total": 8149,
+        "n_viol_total": 564,
+        "max_col_viol": 0.4286,
+        "upper95": 0.5991927457687004,
+        "allocation_budget": 0.045,
+        "allocation_budget_holds": false,
+        "mission_requirement_holds": false,
+        "validation_complete": true,
+        "per_route_viol": [
+          0.33803,
+          0.19373,
+          0.42857,
+          0.15132,
+          0.03229,
+          0.0377,
+          0.03229,
+          0.05808,
+          0.05941,
+          0.05874
+        ]
+      }
+    },
+    "box": {
+      "C": 7,
+      "E_Wh": 2672.892064804254,
+      "runtime_s": 2045.2391987999436,
+      "coverage_optimal": true,
+      "energy_optimal": true,
+      "lexicographic_optimal": true,
+      "global_certificate_available": true,
+      "termination_reason": "stage-optimum-proven",
+      "covered": [
+        "Rodsand_II_001",
+        "Rodsand_II_003",
+        "Rodsand_II_004",
+        "Rodsand_II_005",
+        "Rodsand_II_006",
+        "Rodsand_II_008",
+        "Rodsand_II_010"
+      ],
+      "replay": {
+        "n_replayed": 5,
+        "n_missing": 0,
+        "n_test_total": 2344,
+        "n_viol_total": 106,
+        "max_col_viol": 0.1379,
+        "upper95": 0.2788206064578625,
+        "allocation_budget": 0.045,
+        "allocation_budget_holds": false,
+        "mission_requirement_holds": false,
+        "validation_complete": true,
+        "per_route_viol": [
+          0.11207,
+          0.13793,
+          0.03693,
+          0.03551,
+          0.03693
+        ]
+      }
+    },
+    "budget_G2": {
+      "C": 10,
+      "E_Wh": 3085.9145163186417,
+      "runtime_s": 3600.51085359999,
+      "coverage_optimal": false,
+      "energy_optimal": false,
+      "lexicographic_optimal": false,
+      "global_certificate_available": false,
+      "termination_reason": "rmp-time_limit",
+      "covered": [
+        "Rodsand_II_001",
+        "Rodsand_II_002",
+        "Rodsand_II_003",
+        "Rodsand_II_004",
+        "Rodsand_II_005",
+        "Rodsand_II_006",
+        "Rodsand_II_007",
+        "Rodsand_II_008",
+        "Rodsand_II_009",
+        "Rodsand_II_010"
+      ],
+      "replay": {
+        "n_replayed": 10,
+        "n_missing": 0,
+        "n_test_total": 10273,
+        "n_viol_total": 647,
+        "max_col_viol": 0.338,
+        "upper95": 0.4495511025757814,
+        "allocation_budget": 0.045,
+        "allocation_budget_holds": false,
+        "mission_requirement_holds": false,
+        "validation_complete": true,
+        "per_route_viol": [
+          0.33803,
+          0.05541,
+          0.0404,
+          0.05607,
+          0.12185,
+          0.05741,
+          0.28846,
+          0.05808,
+          0.05741,
+          0.0404
+        ]
+      }
+    },
+    "cantelli": {
+      "C": 0,
+      "E_Wh": 0.0,
+      "runtime_s": 3600.001736599952,
+      "coverage_optimal": false,
+      "energy_optimal": false,
+      "lexicographic_optimal": false,
+      "global_certificate_available": false,
+      "termination_reason": "exact-pricing-time-limit",
+      "covered": [],
+      "replay": {
+        "n_replayed": 0,
+        "n_missing": 0,
+        "n_test_total": 0,
+        "n_viol_total": 0,
+        "max_col_viol": null,
+        "upper95": null,
+        "allocation_budget": 0.045,
+        "allocation_budget_holds": null,
+        "mission_requirement_holds": null,
+        "validation_complete": null,
+        "per_route_viol": []
+      }
+    }
+  }
+}

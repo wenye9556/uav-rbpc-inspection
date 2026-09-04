@@ -1,0 +1,309 @@
+{
+  "plan": "n10_M_K2_B7 certified",
+  "sweep": [
+    {
+      "shift_min": -5,
+      "h_base": [
+        20,
+        25,
+        30
+      ],
+      "rate": 0.04888607327631718,
+      "n_sorties": 7,
+      "n_test": 9471,
+      "n_viol": 463,
+      "channels": {
+        "T": 17,
+        "speed": 17,
+        "escort": 273,
+        "dock": 174,
+        "recovery_state_gate": 273
+      },
+      "per_route": [
+        {
+          "tau": 305.0,
+          "h0": 20,
+          "h": 15,
+          "n_test": 1498,
+          "n_viol": 78,
+          "viol_rate": 0.05207
+        },
+        {
+          "tau": 140.0,
+          "h0": 20,
+          "h": 15,
+          "n_test": 1498,
+          "n_viol": 80,
+          "viol_rate": 0.0534
+        },
+        {
+          "tau": 160.0,
+          "h0": 30,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 45.0,
+          "h0": 20,
+          "h": 15,
+          "n_test": 1498,
+          "n_viol": 78,
+          "viol_rate": 0.05207
+        },
+        {
+          "tau": 290.0,
+          "h0": 20,
+          "h": 15,
+          "n_test": 1498,
+          "n_viol": 81,
+          "viol_rate": 0.05407
+        },
+        {
+          "tau": 270.0,
+          "h0": 20,
+          "h": 15,
+          "n_test": 1498,
+          "n_viol": 81,
+          "viol_rate": 0.05407
+        },
+        {
+          "tau": 320.0,
+          "h0": 25,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 41,
+          "viol_rate": 0.0368
+        }
+      ]
+    },
+    {
+      "shift_min": 0,
+      "h_base": [
+        20,
+        25,
+        30
+      ],
+      "rate": 0.03332866545301778,
+      "n_sorties": 7,
+      "n_test": 7141,
+      "n_viol": 238,
+      "channels": {
+        "escort": 160,
+        "dock": 76,
+        "recovery_state_gate": 160,
+        "T": 2,
+        "speed": 2
+      },
+      "per_route": [
+        {
+          "tau": 305.0,
+          "h0": 20,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 38,
+          "viol_rate": 0.03411
+        },
+        {
+          "tau": 140.0,
+          "h0": 20,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 38,
+          "viol_rate": 0.03411
+        },
+        {
+          "tau": 160.0,
+          "h0": 30,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 45.0,
+          "h0": 20,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 38,
+          "viol_rate": 0.03411
+        },
+        {
+          "tau": 290.0,
+          "h0": 20,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 39,
+          "viol_rate": 0.03501
+        },
+        {
+          "tau": 270.0,
+          "h0": 20,
+          "h": 20,
+          "n_test": 1114,
+          "n_viol": 39,
+          "viol_rate": 0.03501
+        },
+        {
+          "tau": 320.0,
+          "h0": 25,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        }
+      ]
+    },
+    {
+      "shift_min": 5,
+      "h_base": [
+        20,
+        25,
+        30
+      ],
+      "rate": 0.02818019448303235,
+      "n_sorties": 7,
+      "n_test": 5039,
+      "n_viol": 142,
+      "channels": {
+        "escort": 107,
+        "dock": 35,
+        "recovery_state_gate": 107
+      },
+      "per_route": [
+        {
+          "tau": 305.0,
+          "h0": 20,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 140.0,
+          "h0": 20,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 160.0,
+          "h0": 30,
+          "h": 35,
+          "n_test": 0,
+          "n_viol": 0,
+          "viol_rate": null
+        },
+        {
+          "tau": 45.0,
+          "h0": 20,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 290.0,
+          "h0": 20,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 270.0,
+          "h0": 20,
+          "h": 25,
+          "n_test": 867,
+          "n_viol": 24,
+          "viol_rate": 0.02768
+        },
+        {
+          "tau": 320.0,
+          "h0": 25,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        }
+      ]
+    },
+    {
+      "shift_min": 10,
+      "h_base": [
+        20,
+        25,
+        30
+      ],
+      "rate": 0.03125,
+      "n_sorties": 7,
+      "n_test": 3520,
+      "n_viol": 110,
+      "channels": {
+        "escort": 85,
+        "dock": 25,
+        "recovery_state_gate": 85
+      },
+      "per_route": [
+        {
+          "tau": 305.0,
+          "h0": 20,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 140.0,
+          "h0": 20,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 160.0,
+          "h0": 30,
+          "h": 40,
+          "n_test": 0,
+          "n_viol": 0,
+          "viol_rate": null
+        },
+        {
+          "tau": 45.0,
+          "h0": 20,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 290.0,
+          "h0": 20,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 270.0,
+          "h0": 20,
+          "h": 30,
+          "n_test": 704,
+          "n_viol": 22,
+          "viol_rate": 0.03125
+        },
+        {
+          "tau": 320.0,
+          "h0": 25,
+          "h": 35,
+          "n_test": 0,
+          "n_viol": 0,
+          "viol_rate": null
+        }
+      ]
+    }
+  ]
+}

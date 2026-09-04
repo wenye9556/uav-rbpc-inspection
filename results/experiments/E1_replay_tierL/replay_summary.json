@@ -1,0 +1,112 @@
+{
+  "emp": 0.0314,
+  "n_replayed": 8,
+  "n_missing": 0,
+  "n_test_total": 7351,
+  "n_viol_total": 231,
+  "ci95_low": 0.027555,
+  "ci95_high": 0.035671,
+  "pooled_naive_upper95": 0.03498,
+  "upper95": 0.09128771196015377,
+  "simultaneous_confidence_per_sortie": 0.99375,
+  "ci_method": "bonferroni-simultaneous-max-per-sortie-hoeffding-azuma-conditional-risk-upper95",
+  "validation_complete": true,
+  "formal_reliability_claim_eligible": false,
+  "evidence_scope": "validation-selection-only-no-formal-inference",
+  "max_col_viol": 0.035,
+  "n_realized": 8,
+  "n_realized_viol": 0,
+  "realized_ci95_low": 0.0,
+  "realized_ci95_high": 0.369417,
+  "realized_upper95": 0.432705,
+  "validation_type": "real-validation-not-final",
+  "validation_plan_fingerprint": "8f32e8641a35973f5dca4f27da1f06ee18bf46922714948b8d5fd02816305361",
+  "validation_event_fingerprint_count": 8,
+  "validation_unique_event_fingerprint_count": 4,
+  "validation_duplicate_event_groups": 3,
+  "validation_event_group_sizes_json": "[1, 2, 2, 3]",
+  "validation_event_grouping_used_for_gate": false,
+  "validation_event_grouping_note": "audit-only: identical empirical masks do not prove identical population hypotheses; formal gate remains per-sortie Bonferroni",
+  "allocation_budget": 0.045,
+  "mission_requirement_budget": 0.05,
+  "allocation_budget_holds": false,
+  "mission_requirement_holds": false,
+  "all_routes_allocation_holds": false,
+  "all_routes_mission_holds": false,
+  "validation_gate_contract": "selection-gate-internal-allocation-budget-v14-exact-qmax-once-only;per-sortie-bonferroni-retained;event-fingerprints-audit-only;mission-0.05-reported-separately",
+  "disjoint_xi_holdout": false,
+  "disjoint_weather_holdout": false,
+  "disjoint_real_holdout": false,
+  "independent_xi_holdout": false,
+  "independent_weather_holdout": false,
+  "independent_real_holdout": false,
+  "safe_tids": [],
+  "chosen_plan": [
+    {
+      "tau": 140.0,
+      "h": 20.0,
+      "tids": [
+        "Rodsand_II_008"
+      ],
+      "E_plan_Wh": 376.3852298938936
+    },
+    {
+      "tau": 270.0,
+      "h": 20.0,
+      "tids": [
+        "Rodsand_II_003"
+      ],
+      "E_plan_Wh": 369.23988045943906
+    },
+    {
+      "tau": 160.0,
+      "h": 30.0,
+      "tids": [
+        "Rodsand_II_005",
+        "Rodsand_II_004"
+      ],
+      "E_plan_Wh": 561.1003080374093
+    },
+    {
+      "tau": 30.0,
+      "h": 30.0,
+      "tids": [
+        "Rodsand_II_010",
+        "Rodsand_II_009"
+      ],
+      "E_plan_Wh": 567.0406022147589
+    },
+    {
+      "tau": 305.0,
+      "h": 25.0,
+      "tids": [
+        "Rodsand_II_007"
+      ],
+      "E_plan_Wh": 460.97117931051264
+    },
+    {
+      "tau": 45.0,
+      "h": 20.0,
+      "tids": [
+        "Rodsand_II_006"
+      ],
+      "E_plan_Wh": 374.3914147685666
+    },
+    {
+      "tau": 320.0,
+      "h": 25.0,
+      "tids": [
+        "Rodsand_II_002"
+      ],
+      "E_plan_Wh": 456.29742359812025
+    },
+    {
+      "tau": 285.0,
+      "h": 25.0,
+      "tids": [
+        "Rodsand_II_001"
+      ],
+      "E_plan_Wh": 459.90582347599974
+    }
+  ]
+}

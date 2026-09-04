@@ -80,7 +80,10 @@ print(S.FORMAL_PROOF_CONTRACT_SHA256)
 This value must equal the `proof_contract_sha256` recorded in each artifact
 under `results/`.
 
-## Selected artifacts under `results/`
+## Artifacts under `results/`
+
+The complete frozen results tree is mirrored here (all experiments,
+including historical solver generations with their era-bound proof digests).
 
 | Artifact | Backs |
 |---|---|

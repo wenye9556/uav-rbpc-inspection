@@ -1,0 +1,3 @@
+start=10770: median=4209m nonlow=58/72 -> fail
+start=11940: median=1414m nonlow=65/72 -> PASS
+W2 SELECTED = 11940

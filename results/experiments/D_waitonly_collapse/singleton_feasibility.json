@@ -1,0 +1,20 @@
+{
+  "wait_and_speed": {
+    "total_singletons": 4320,
+    "feasible": 261,
+    "feasible_pct": 6.04,
+    "rejection_reasons": {
+      "time_margin_negative": 3834,
+      "energy_margin_negative": 225
+    }
+  },
+  "wait_only": {
+    "total_singletons": 4320,
+    "feasible": 2,
+    "feasible_pct": 0.05,
+    "rejection_reasons": {
+      "energy_margin_negative": 3138,
+      "time_margin_negative": 1180
+    }
+  }
+}

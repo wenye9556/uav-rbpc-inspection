@@ -1,0 +1,25 @@
+2026-08-30 14:54:55,638 INFO 载入 90 台风机 (turbines_Rodsand_II_clean.csv)
+2026-08-30 14:54:55,646 INFO 载入浪 2928 行 (waves_Rodsand_II.csv, UTC)
+2026-08-30 14:54:55,654 INFO 载入风 2928 行 (weather_Rodsand_II.csv, UTC)
+2026-08-30 14:54:55,656 WARNING 无 ξ 文件, 使用真实量级合成夹具。
+2026-08-30 14:54:59,708 INFO SAA 经验样本已登记 24 格(exact=24, pooled回退=0) ← D:\无人机巡检风机\tracks\xi_samples_caseB.csv
+2026-08-30 14:54:59,709 INFO 固定接地时间 recourse=wait_and_speed (wait=True, speed=True)
+2026-08-30 14:54:59,710 WARNING SOC 校正=geo2d: 判据口径改变(更保守), 与 soc_correction=none 的结果不可混排。
+2026-08-30 14:54:59,710 INFO pair_radius[auto] L: R_max=9728m (能量限 21383m / 时间限 9728m; E_avail=619.1Wh, h_max=30min, Δz=55m)
+2026-08-30 14:54:59,710 INFO pair_radius[auto] M: R_max=9728m (能量限 13716m / 时间限 9728m; E_avail=268.6Wh, h_max=30min, Δz=55m)
+2026-08-30 14:54:59,710 INFO pair_radius[auto] S: R_max=9728m (能量限 12590m / 时间限 9728m; E_avail=144.7Wh, h_max=30min, Δz=55m)
+2026-08-30 14:54:59,710 INFO pair_radius[auto] = 9728m(取 L 档外包络; 正式口径)
+2026-08-30 14:55:21,404 INFO 载入母船航迹 track_219018788.csv (879937 点, 时长 175679.4 min)
+2026-08-30 14:55:21,417 INFO 航迹降采样 ×15: 58663 点(中位间隔 70.0s)
+2026-08-30 14:55:21,601 INFO 时隙: 72 个(Δτ=5min, 窗=360min, 真实AIS(track_219018788.csv, 窗起点@11940.0min, 前置历史5.1min, 334点)); reach=10/10 台
+2026-08-30 14:55:21,602 INFO 窗内 standoff(船→最近风机): 中位 1414m / 最小 25m / 最大 9644m; c(τ) 四态: {'直航': 38, '低速': 7, '转弯': 15, '动力定位': 12}(在场判据 r_op=3000m; 预测器=cv_noleak)
+2026-08-30 14:55:22,435 INFO SAA 经验样本已登记 24 格(exact=24, pooled回退=0) ← D:\无人机巡检风机\tracks\xi_samples_caseB.csv
+2026-08-30 14:55:22,436 INFO ξ 预测器合同通过: predictor=cv_noleak predictor_contract=cv_noleak_backward_window_epoch_seconds epoch_contract=utc_datetime64_ns_to_epoch_seconds mmsi=219018788
+2026-08-30 15:19:52,198 INFO 写 D:\无人机巡检风机\agent_analysis\experiments\run_tree_w2\results\model_experiments\E1_lex_certify\E1_lex_certify.csv (1 行)
+2026-08-30 15:19:52,218 INFO 写 D:\无人机巡检风机\agent_analysis\experiments\run_tree_w2\results\model_experiments\E1_lex_certify\E1_lex_certify_detail.csv (3 行)
+就绪: 真实AIS(track_219018788.csv, 窗起点@11940.0min, 前置历史5.1min, 334点) | 窗 T=360min Δτ=5 | reach=10 台 | 天气DRCC=ON | 甲板=interval | SAA=empirical(xi_samples_caseB.csv, 24 格, mmsi=219018788, exact=24, pooled_fallback=0) | tau_insp=5.0min/台
+
+[E1_lex_certify] direct exact lexicographic certification for one fixed resource point
+coverage: 3 <= C* <= 3 | coverage_optimal=True
+energy: incumbent=871.6074374207544 Wh lower_bound=871.6074374207543 Wh | energy_optimal=True
+lexicographic_optimal=True global_certificate_available=True | termination=stage-optimum-proven

@@ -1,0 +1,2133 @@
+{
+  "contract": "formal-publication-preflight-v3-coherent-weather-power-audit-metadata-only-test",
+  "pass_all_mandatory": true,
+  "selected_mmsi": "219018788",
+  "checks": [
+    {
+      "check": "file:track_csv",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "tracks\\track_219018788.csv"
+    },
+    {
+      "check": "file:xi_train_samples",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "tracks\\xi_samples_caseB.csv"
+    },
+    {
+      "check": "file:validation_samples",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "tracks\\weather_v17_1_stage\\xi_weather_samples_validation_caseB.csv"
+    },
+    {
+      "check": "file:final_test_samples",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "tracks\\weather_v17_1_stage\\xi_weather_samples_test_caseB.csv"
+    },
+    {
+      "check": "file:weather_moments_csv",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "tracks\\weather_v17_1_stage\\weather_moments_caseB.csv"
+    },
+    {
+      "check": "single_concrete_track_mmsi",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "219018788"
+    },
+    {
+      "check": "train:mmsi_exact",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=48761 mmsi=['219018788']"
+    },
+    {
+      "check": "train:nonempty",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=48761"
+    },
+    {
+      "check": "validation:mmsi_exact",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=16101 mmsi=['219018788']"
+    },
+    {
+      "check": "validation:nonempty",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=16101"
+    },
+    {
+      "check": "test:mmsi_exact",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=16064 mmsi=['219018788']"
+    },
+    {
+      "check": "test:nonempty",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "rows=16064"
+    },
+    {
+      "check": "train_validation_test_hashes_distinct",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "hashes=['4ad41474d4ffa06682e77f00d142dad6c9a4281b9cfa3d2f9baa71b7dcc6ffb6', 'e57e66959623cb5f3761198e23d094d0dbd1b09b1fdb2b5c3ceae283311cfb7a', 'fbb33b3ac9fc42b5a47f46d988e9010b27525aa34ffdb0cd9b0c68350cfc32cd']"
+    },
+    {
+      "check": "formal_xi_single_vessel",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "xi_mmsi=219018788 cross_pool=False cells=24"
+    },
+    {
+      "check": "purge_covers_max_train_horizon",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "purge=30.0, max_h=30"
+    },
+    {
+      "check": "validation_contains_train_horizons",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "{'train': [5, 10, 15, 20, 25, 30], 'validation': [5, 10, 15, 20, 25, 30], 'test': [5, 10, 15, 20, 25, 30]}"
+    },
+    {
+      "check": "test_contains_train_horizons",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "{'train': [5, 10, 15, 20, 25, 30], 'validation': [5, 10, 15, 20, 25, 30], 'test': [5, 10, 15, 20, 25, 30]}"
+    },
+    {
+      "check": "holdout_temporal_disjointness_and_purge",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "train/validation/test intervals are purged/disjoint; test schema/provenance pass; final-test outcomes not materialized"
+    },
+    {
+      "check": "formal_weather_contract",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "horizons=[5, 10, 15, 20, 25, 30] source="
+    },
+    {
+      "check": "weather_moments_bound_to_actual_xi_train",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "recorded=4ad41474d4ffa06682e77f00d142dad6c9a4281b9cfa3d2f9baa71b7dcc6ffb6 actual=4ad41474d4ffa06682e77f00d142dad6c9a4281b9cfa3d2f9baa71b7dcc6ffb6"
+    },
+    {
+      "check": "mission_risk_budget_exact_binary64",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "sum=0.044999999999999998 budget=0.050000000000000003"
+    },
+    {
+      "check": "statistical_power_metadata:m=1",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=740; validation supported cells=6/24; test-metadata supported cells=6/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=2",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=911; validation supported cells=4/24; test-metadata supported cells=4/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=3",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1011; validation supported cells=4/24; test-metadata supported cells=4/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=4",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1082; validation supported cells=4/24; test-metadata supported cells=4/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=5",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1138; validation supported cells=3/24; test-metadata supported cells=3/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=6",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1183; validation supported cells=3/24; test-metadata supported cells=3/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=7",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1221; validation supported cells=3/24; test-metadata supported cells=3/24"
+    },
+    {
+      "check": "statistical_power_metadata:m=8",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "zero-failure required_n=1254; validation supported cells=3/24; test-metadata supported cells=3/24"
+    },
+    {
+      "check": "formal_recovery_predictor_cv_noleak",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "cv_noleak"
+    },
+    {
+      "check": "formal_soc_geo2d",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "geo2d"
+    },
+    {
+      "check": "formal_time_recourse_wait_and_speed",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "wait_and_speed"
+    },
+    {
+      "check": "no_legacy_E1_final_test_consumption",
+      "status": "PASS",
+      "mandatory": true,
+      "detail": "absent"
+    },
+    {
+      "check": "E2_final_test_state",
+      "status": "PASS",
+      "mandatory": false,
+      "detail": "not yet consumed"
+    }
+  ],
+  "statistical_power": [
+    {
+      "sorties": 1,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 847,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 1114,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 867,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 1,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 740,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 740,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 740,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 1,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 740,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 2,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 2,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 2,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 1114,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 2,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 911,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 911,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 911,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 2,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 911,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 3,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 3,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 3,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 1114,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 3,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1011,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1011,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1011,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 3,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1011,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 4,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 4,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 4,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 1114,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 4,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1082,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1082,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1082,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 4,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1082,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 5,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 5,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 5,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 1114,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1138,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1138,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1138,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 5,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1138,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 6,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 6,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 6,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 1114,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1183,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1183,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1183,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 6,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1183,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 7,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 7,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 7,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 1114,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1221,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1221,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1221,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 7,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1221,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 5.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 702,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 508,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 5.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 4726,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 4871,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 8,
+      "h_min": 5.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 847,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 902,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 5.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 447,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 430,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 10.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 351,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 265,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 10.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 2322,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 2368,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 8,
+      "h_min": 10.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 422,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 445,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 10.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 215,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 221,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 15.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 238,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 190,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 15.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 1498,
+      "validation_zero_failure_support": true,
+      "final_test_metadata_n": 1538,
+      "final_test_zero_failure_support": true
+    },
+    {
+      "sorties": 8,
+      "h_min": 15.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 287,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 301,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 15.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 141,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 134,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 20.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 177,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 135,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 20.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 1114,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 1124,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 20.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 213,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 217,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 20.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 104,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 123,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 25.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 152,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 98,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 25.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 867,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 894,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 25.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 156,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 182,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 25.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 91,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 88,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 30.0,
+      "c_state": "低速",
+      "zero_failure_required_n": 1254,
+      "validation_n": 116,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 102,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 30.0,
+      "c_state": "动力定位",
+      "zero_failure_required_n": 1254,
+      "validation_n": 704,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 707,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 30.0,
+      "c_state": "直航",
+      "zero_failure_required_n": 1254,
+      "validation_n": 146,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 151,
+      "final_test_zero_failure_support": false
+    },
+    {
+      "sorties": 8,
+      "h_min": 30.0,
+      "c_state": "转弯",
+      "zero_failure_required_n": 1254,
+      "validation_n": 65,
+      "validation_zero_failure_support": false,
+      "final_test_metadata_n": 70,
+      "final_test_zero_failure_support": false
+    }
+  ]
+}
